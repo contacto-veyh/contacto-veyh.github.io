@@ -1,30 +1,176 @@
-/* css/style.css */
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    line-height: 1.6;
-    background-color: #f9f9f9;
-    color: #333;
-  }
-  
-  header {
-    background: #005f73;
-    color: white;
-    padding: 2rem;
-    text-align: center;
-  }
-  
-  main {
-    padding: 2rem;
-  }
-  
-  footer {
-    background: #eee;
-    text-align: center;
-    padding: 1rem;
-    margin-top: 2rem;
-    font-size: 0.9rem;
-  }
+  font-family: 'Paralucent', sans-serif;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: #001f5b; /* dark blue */
+  margin: 0 1rem;
+  position: relative;
+}
+
+a:hover::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #001f5b;
+  bottom: -4px;
+  left: 0;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.hero {
+  background: url('path-to-hero-bg.jpg') no-repeat center center/cover;
+  position: relative;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.5);
+}
+
+.hero h1 {
+  position: relative;
+  z-index: 1;
+  font-size: 3rem;
+}
+
+.sobre-nosotros {
+  padding: 4rem 2rem;
+  text-align: center;
+  background: white;
+}
+
+.sobre-nosotros h2 {
+  color: #00aaff; /* light blue */
+  margin-bottom: 1rem;
+}
+
+.sobre-nosotros p {
+  color: #666; /* gray text */
+}
+
+.servicios {
+  padding: 4rem 2rem;
+}
+
+.gray-bg {
+  background: #eee;
+}
+
+.white-bg {
+  background: white;
+}
+
+.lightblue-bg {
+  background: #00aaff;
+  color: white;
+}
+
+.servicio-container {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.servicio-container.reverse {
+  flex-direction: row-reverse;
+}
+
+.servicio-container img {
+  width: 50%;
+}
+
+.text {
+  width: 50%;
+}
+
+.images-row {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.images-row img {
+  width: 30%;
+}
+
+.contacto {
+  padding: 4rem 2rem;
+}
+
+.contacto-container {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.contact-text {
+  width: 50%;
+  color: white;
+}
+
+.contact-form {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 0.75rem;
+  border: none;
+  border-radius: 5px;
+}
+
+.contact-form button {
+  background-color: #001f5b;
+  color: white;
+  border: none;
+  padding: 0.75rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.large-image img {
+  width: 100%;
+  height: auto;
+}
+
+.footer {
+  background: #001f5b;
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+}
+
   

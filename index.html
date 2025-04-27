@@ -1,30 +1,96 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My GitHub Pages Site</title>
-  <link rel="stylesheet" href="css/style.css" />
-  <link rel="icon" type="image/png" href="img/favicon.png" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mi Sitio Web</title>
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Add Paralucent font if available -->
+  <link href="https://fonts.googleapis.com/css2?family=Paralucent:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <h1>Welcome to My Website</h1>
-    <p>This is a site hosted with GitHub Pages ✨</p>
+
+  <!-- 1. Navigation -->
+  <header class="header">
+    <div class="logo">LOGO</div>
+    <nav class="nav">
+      <a href="#sobre-nosotros">Sobre nosotros</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
   </header>
 
-  <main>
-    <section>
-      <h2>About</h2>
-      <p>This is a basic HTML + CSS site, built and deployed straight from GitHub!</p>
-    </section>
-  </main>
+  <!-- 2. Hero section with background image -->
+  <section class="hero">
+    <h1>Bienvenidos a Nuestro Sitio</h1>
+  </section>
 
-  <footer>
-    <p>© 2025 Your Name</p>
+  <!-- 3. Sobre Nosotros -->
+  <section id="sobre-nosotros" class="sobre-nosotros">
+    <h2>Sobre nosotros</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla accumsan.</p>
+  </section>
+
+  <!-- 4. Servicios - first banner -->
+  <section class="servicios gray-bg">
+    <div class="servicio-container">
+      <img src="img/servicios.png" alt="Servicio 1">
+      <div class="text">
+        <h2>Servicios</h2>
+        <p>Descripción del servicio.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. Servicios - second banner -->
+  <section class="servicios white-bg">
+    <div class="servicio-container reverse">
+      <div class="text">
+        <h2>Más Servicios</h2>
+        <p>Descripción adicional del servicio.</p>
+      </div>
+      <img src="img/cobertura.png" alt="Servicio 2">
+    </div>
+  </section>
+
+  <!-- 6. Servicios - third banner -->
+  <section class="servicios lightblue-bg center-text">
+    <h2>Otros Servicios</h2>
+    <p>Más detalles de servicios ofrecidos.</p>
+    <div class="images-row">
+      <img src="img/unidad1.png" alt="Img1">
+      <img src="img/unidad2.png" alt="Img2">
+      <img src="img/unidad3.png" alt="Img3">
+    </div>
+  </section>
+
+  <!-- 7. Contacto -->
+  <section id="contacto" class="contacto gray-bg">
+    <div class="contacto-container">
+      <div class="contact-text">
+        <h2>Contáctanos</h2>
+        <p>Déjanos tu mensaje y nos pondremos en contacto contigo.</p>
+      </div>
+      <form class="contact-form">
+        <input type="text" placeholder="Nombre" required>
+        <input type="email" placeholder="Correo electrónico" required>
+        <textarea placeholder="Mensaje" required></textarea>
+        <button type="submit">Enviar</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- 8. Large Image -->
+  <section class="large-image">
+    <img src="img/flotillaveyh.png" alt="Imagen Grande">
+  </section>
+
+  <!-- 9. Footer -->
+  <footer class="footer">
+    <p>&copy; 2025 Mi Sitio Web. Todos los derechos reservados.</p>
   </footer>
 
-  <!-- Optional: JavaScript -->
-  <!-- <script src="js/script.js"></script> -->
 </body>
 </html>
+
