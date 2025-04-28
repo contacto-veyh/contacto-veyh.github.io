@@ -32,14 +32,19 @@ a:hover::after {
   justify-content: space-between;
   align-items: center;
   background: white;
-  padding: 1rem 2rem;
+  padding: 2rem 2rem;
   position: sticky;
   top: 0;
   z-index: 10;
 }
 
+.logo img {
+  height: 60px; /* or whatever size looks good */
+  width: auto;
+}
+
 .hero {
-  background: url('path-to-hero-bg.jpg') no-repeat center center/cover;
+  background: url('img/camiones2.PNG') no-repeat center center/cover;
   position: relative;
   height: 90vh;
   display: flex;
@@ -77,8 +82,13 @@ a:hover::after {
   color: #666; /* gray text */
 }
 
-.servicios {
-  padding: 4rem 2rem;
+.servicios h2 {
+  color: #00aaff; /* light blue */
+  margin-bottom: 1rem;
+}
+
+.servicios p {
+  color: #666; /* gray text */
 }
 
 .gray-bg {
@@ -119,8 +129,19 @@ a:hover::after {
   margin-top: 2rem;
 }
 
+.images-row h2 {
+  color: #00aaff; /* light blue */
+  margin-bottom: 1rem;
+}
+
+.images-row p {
+  color: #666; /* gray text */
+}
+
 .images-row img {
   width: 30%;
+  height: 200px; 
+  object-fit: cover;
 }
 
 .contacto {
@@ -135,7 +156,7 @@ a:hover::after {
 
 .contact-text {
   width: 50%;
-  color: white;
+  color: black;
 }
 
 .contact-form {
