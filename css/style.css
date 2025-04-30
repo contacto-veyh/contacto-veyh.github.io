@@ -107,7 +107,11 @@ li {
   margin-bottom: 1rem;
   scroll-margin-top: 80px; /* adjust based on your navbar height */
   padding: 4rem 2rem; /* 👈 Add this */
+}
+
+.servicios h2 {
   font-size: 3rem;
+  margin-bottom: 1rem;
 }
 
 .servicios p {
@@ -152,8 +156,9 @@ li {
   width: 50%;
 }
 
-.servicios.white-bg .servicio-container {
-  gap: 0;
+.servicios.white-bg .servicio-container img {
+  margin: 0;
+  padding: 0;
 }
 
 .images-row {
@@ -179,6 +184,10 @@ li {
   width: 30%;
   height: 200px; 
   object-fit: cover;
+}
+
+.servicios.white-bg.center-images {
+  text-align: center;
 }
 
 .contacto {
