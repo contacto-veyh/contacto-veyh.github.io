@@ -54,7 +54,7 @@ a {
 
 .hero {
   position: relative;
-  background: url('img/../camiones2.png') center/cover no-repeat;
+  background: url('../img/camiones2.png') center/cover no-repeat;
   height: 100vh;
   display: flex;
   justify-content: center;
