@@ -105,7 +105,7 @@ li {
 .servicios {
   color: #00aaff; /* light blue */
   margin-bottom: 1rem;
-  scroll-margin-top: 30px; /* adjust based on your navbar height */
+  scroll-margin-top: 10px; /* adjust based on your navbar height */
   padding: 4rem 2rem; /* 👈 Add this */
 }
 
