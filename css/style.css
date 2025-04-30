@@ -17,7 +17,7 @@ a {
   position: relative;
 }
 
-a:hover::after {
+.nav a:hover::after {
   content: '';
   position: absolute;
   width: 100%;
@@ -55,7 +55,7 @@ a:hover::after {
 
 .hero {
   position: relative;
-  background: url('img/camiones2.PNG') center/cover no-repeat;
+  background: url('img/camiones2.png') center/cover no-repeat;
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -105,6 +105,7 @@ a:hover::after {
   color: #00aaff; /* light blue */
   margin-bottom: 1rem;
   scroll-margin-top: 80px; /* adjust based on your navbar height */
+  padding: 4rem 2rem; /* 👈 Add this */
 }
 
 .servicios p {
